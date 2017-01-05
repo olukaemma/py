@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
-#__doc__
-# Script developed by Emmanuel Oluka
+#Scipt, to perform ssh and execute commands using the paramiko module
+#Author: Emmanuel Oluka
 #Date: 01/04/2017:11:00AM
 #
 #---Requirement---
