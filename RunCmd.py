@@ -4,14 +4,15 @@
 # Script developed by Emmanuel Oluka
 #Date: 01/04/2017:11:00AM
 #
-
-#finction to connect to any ssh client and execute commands
+#---Requirement---
+'''
+The paramiko module is required to execute this script
+Please install the paramiko module using the pip
+pip install prarmiko
+'''
+#function to connect to any ssh client and execute commands
 import pip
 import sys
-import paramiko
-'''check if paramiko is install, and if not, install it'''
-if not paramiko in sys.modules.keys():
-    pip.main(['install', 'paramiko'])
 import paramiko
 import cmd
 
