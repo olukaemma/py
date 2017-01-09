@@ -63,10 +63,11 @@ class RunCommand(cmd.Cmd):
             conn.close()
 	
     def do_exit(self, args):
-	'''Function to exit the console app'''
-	import os
-	if args:
-		os.system('exit')
+        import os
+        if args:
+            os.system('exit')
+        else:
+            os.system('exit')
 
 if __name__ == '__main__':
     RunCommand().cmdloop()
