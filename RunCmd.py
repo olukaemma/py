@@ -61,6 +61,12 @@ class RunCommand(cmd.Cmd):
         '''close the ssh connection'''
         for conn in self.connections:
             conn.close()
+	
+    def do_exit(self, args):
+	'''Function to exit the console app'''
+	import os
+	if args:
+		os.system('exit')
 
 if __name__ == '__main__':
     RunCommand().cmdloop()
