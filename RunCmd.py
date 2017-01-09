@@ -51,10 +51,11 @@ class RunCommand(cmd.Cmd):
 
     def do_cls(self, args):
         '''This function, just clears the content of the screen'''
-        if args:
-            print('\n'*100)
+        import os
+	if args:
+            os.system('cls' if os.name == 'nt' else 'clear')
         else:
-            print('\n'*100)
+            os.system('cls' if os.name == 'nt' else 'clear')
 
     def do_close(self, args):
         '''close the ssh connection'''
