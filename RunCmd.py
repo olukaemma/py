@@ -50,9 +50,8 @@ class RunCommand(cmd.Cmd):
             print ('Usage: run')
 
     def do_cls(self, args):
-        '''This function, just clears the content of the screen'''
         import os
-	if args:
+        if args:
             os.system('cls' if os.name == 'nt' else 'clear')
         else:
             os.system('cls' if os.name == 'nt' else 'clear')
