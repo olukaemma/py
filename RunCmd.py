@@ -11,7 +11,7 @@ Please install the paramiko module using the pip
 pip install prarmiko
 '''
 #function to connect to any ssh client and execute commands
-import pip
+#import pip
 import sys
 import paramiko
 import cmd
